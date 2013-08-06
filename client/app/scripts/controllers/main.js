@@ -9,7 +9,7 @@ angular.module('clientApp')
     ];
 
     $scope.add = function(){
-    	$http.get('/api/hello/dddd').success(function(data){
+    	$http.get('/api/hello/' + $scope.something ).success(function(data){
     		$scope.awesomeThings.push(data);
     	});
     	
